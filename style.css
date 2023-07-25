@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.scoreCont{
+   
+}
+body{
+    background-color: red;
+    /* over */
+}
+.gameContainar{
+    /* background-color: blueviolet; */
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.astro{
+    background-image: url(astronaut1.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 150px;
+     height:188px;
+
+     position: absolute;
+     bottom:0;
+     left:60px;
+     
+}
+.ufo{
+    width: 266px;
+    height: 223px;
+    background-image: url(ufo.jpg);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 100vw;
+}
+.animateAstro{
+    animation: astro 0.9s linear ;
+}
+.ufoAni{
+    animation: ufoAni 5s linear infinite;
+}
+@keyframes astro{
+    0%{
+       bottom: 0;
+    }
+    50%{
+        bottom: 440px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes ufoAni{
+    0%{
+           left: 100vw;
+    }
+    50%{
+        
+    }
+    100%{
+        left: -10vw;
+    }
+}
